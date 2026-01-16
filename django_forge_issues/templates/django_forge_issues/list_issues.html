@@ -1,0 +1,10 @@
+{% load django_forge_issues %}
+{% load static %}
+<link rel="stylesheet" href="{% static "django_forge_issues.css" %}">
+{% for issue in issues %}
+    <details class="django_forge_issues" open>
+        <summary>{{ issue.title }}</summary>
+        <p>URL: {{ issue.url|urlize }}</p>
+        {{ issue.body|safe }}
+    </details>
+{% endfor %}

@@ -1,0 +1,51 @@
+form.django_forge_issues {
+    label {
+        display: none;
+    }
+
+    input,
+    textarea {
+        border: 1px solid lightgrey;
+        border-radius: 0.375rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        padding: 1rem;
+    }
+
+    input[type=submit] {
+        padding: 1rem;
+        background-color: #007BFF;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        filter: brightness(0.8);
+    }
+}
+
+details.django_forge_issues {
+    border: 1px solid lightgrey;
+    border-radius: 0.375rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    summary {
+        margin-bottom: 1rem;
+    }
+
+    blockquote {
+        border-left-style: solid;
+        border-left-width: 4px;
+        border-color: #bfbfc3;
+        color: #bfbfc3;
+        padding-left: 1rem;
+        margin: 0;
+    }
+}

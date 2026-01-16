@@ -1,0 +1,11 @@
+<ul>
+    <li>
+        Reported by: <b>{{ request.user.username }}</b>
+    </li>
+    <li>
+        About: <a href="{{ url }}">{{ object.get_absolute_url }}</a>
+    </li>
+</ul>
+<blockquote>
+    {{ body }}
+</blockquote>

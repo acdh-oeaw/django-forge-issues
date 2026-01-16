@@ -1,0 +1,6 @@
+<form class="django_forge_issues" method="post">
+    {% csrf_token %}
+    {{ form.media }}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
