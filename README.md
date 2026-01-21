@@ -20,14 +20,13 @@ listing the urls.
 DJANGO_FORGE_ISSUES_PROJECT = "https://the.url.of/your/project"
 DJANGO_FORGE_ISSUES_TOKEN = "secret-token"
 ```
+For Gitlab projects, the `DJANGO_FORGE_ISSUES_PROJECT` must not be the web URL to
+the project but the hostname of the instance and the ID of the project. You can
+find the project ID in `Settings -> General` of your project. So the variable coul
+look like `https://gitlab.example.org/134` where `gitlab.example.org` is the instance
+hostname and `134` is the project ID.
+
 For Gitlab projects, create the token in Project Settings -> Access tokens. Add a
 token that has the role `Reporter` and the `api` scope.
-
-For Github projects, the token can be anything that can be used for
-authentication as described in [the authentication examples of
-pygithub](https://pygithub.readthedocs.io/en/stable/examples/Authentication.html).
-So for example:
-```
-from github import Auth
-DJANGO_FORGE_ISSUES_TOKEN = Auth("secret-token")
-```
+For Github projects, create the token in `Settings -> Developer Settings ->
+Personal Access tokens`.
