@@ -9,10 +9,6 @@ dependencies = [
     "httpx>=0.28.1",
 ]
 
-[project.optional-dependencies]
-gitlab = ["python-gitlab>=7"]
-github = ["PyGithub>=2"]
-
 [tool.uv]
 dev-dependencies = [
     "deptry==0.23",
